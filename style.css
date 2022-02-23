@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Redressed&family=Rubik&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Redressed", cursive;
+  text-align: center;
+  padding: 10px 0;
+}
+
+p {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background-color: #000428;
+  width: 100%;
+}
+
+hr {
+  background-color: rgb(255, 92, 92);
+  width: 200px;
+  height: 4px;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url("https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+a {
+  padding: 10px;
+}
+a:hover {
+  color: skyblue;
+}
+nav > div > a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  display: block;
+  text-align: center;
+}
+
+nav > div > a:hover {
+  border: 0;
+  background-color: skyblue;
+  color: #000;
+}
+
+nav > div {
+  display: none;
+}
+
+header > div {
+  min-height: 70vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec1 {
+  background: linear-gradient(to top, #000428, #01427a);
+}
+.sec2 {
+  background: linear-gradient(to bottom, #000428, #01427a);
+}
+
+.sec1 > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
+}
+
+.sec1 > div > div {
+  padding: 10px 0;
+}
+
+.sec1 > div > div > img {
+  width: 100%;
+}
+
+footer {
+  padding: 30px;
+  background-color: #000428;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show {
+  display: block !important;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+  background-color: #000428;
+  opacity: 0.8;
+  width: 70%;
+  height: 100vh;
+}
+
+@media screen and (min-width: 600px) {
+  nav > div > a {
+    display: inline;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3,
+  p {
+    font-size: 1.25em;
+  }
+  nav > #menu {
+    display: none;
+  }
+  nav > div {
+    display: inline;
+  }
+  .sec1 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  h3,
+  p {
+    font-size: 1.5em;
+  }
+  nav > #menu {
+    display: none;
+  }
+  nav > div > a {
+    display: inline;
+  }
+  .sec1 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
